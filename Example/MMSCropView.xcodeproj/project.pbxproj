@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C82DD7A1C990591003EE150 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C82DD791C990591003EE150 /* UIKit.framework */; };
+		2C9CF9151CA0A67B004AD139 /* CHANGEME.md in Sources */ = {isa = PBXBuildFile; fileRef = 2C9CF9141CA0A67B004AD139 /* CHANGEME.md */; };
+		2CF0CE1F1C98F0CE00AF16FB /* cropexample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CF0CE1E1C98F0CE00AF16FB /* cropexample.jpg */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -28,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C82DD791C990591003EE150 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2C84F7B81CA14A4F00A6FAD0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
+		2C9CF9141CA0A67B004AD139 /* CHANGEME.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGEME.md; path = ../CHANGEME.md; sourceTree = "<group>"; };
+		2CF0CE1E1C98F0CE00AF16FB /* cropexample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cropexample.jpg; path = ../../../../../../Pictures/cropexample.jpg; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MMSCropView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMSCropView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C82DD7A1C990591003EE150 /* UIKit.framework in Frameworks */,
 				749BC400B9B198766DC08C83 /* Pods_MMSCropView_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +80,7 @@
 		2CBD962E59E1BD979F6D9BFC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2C82DD791C990591003EE150 /* UIKit.framework */,
 				B194B95DEE914A7E3C635B41 /* Pods_MMSCropView_Example.framework */,
 				EAA0C9E38F6FBF5B0A79AC7C /* Pods_MMSCropView_Tests.framework */,
 			);
@@ -102,6 +111,7 @@
 		607FACD21AFB9204008FA782 /* Example for MMSCropView */ = {
 			isa = PBXGroup;
 			children = (
+				2CF0CE1E1C98F0CE00AF16FB /* cropexample.jpg */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -141,9 +151,11 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				2C9CF9141CA0A67B004AD139 /* CHANGEME.md */,
 				992623DA63E1B8DA9E180F5A /* MMSCropView.podspec */,
 				6BAFB59C88B56C4B329E7070 /* README.md */,
 				B11D5700AF01AFC924B273B0 /* LICENSE */,
+				2C84F7B81CA14A4F00A6FAD0 /* .gitignore */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -248,6 +260,7 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				2CF0CE1F1C98F0CE00AF16FB /* cropexample.jpg in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +288,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMSCropView_Example/Pods-MMSCropView_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		2C7826C04D20B1DADE356B23 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -359,6 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C9CF9151CA0A67B004AD139 /* CHANGEME.md in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
@@ -439,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -477,7 +490,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -515,10 +528,7 @@
 			baseConfigurationReference = BEEE356284E24E2C7D9D8B78 /* Pods-MMSCropView_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -536,10 +546,7 @@
 			baseConfigurationReference = D6419934E559A0AF81A517B7 /* Pods-MMSCropView_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";

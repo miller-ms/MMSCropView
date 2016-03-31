@@ -1,0 +1,6 @@
+framework module Pods_MMSCropView_Tests {
+  umbrella header "Pods-MMSCropView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

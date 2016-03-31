@@ -8,16 +8,12 @@
 
 Pod::Spec.new do |s|
   s.name             = "MMSCropView"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of MMSCropView."
+  s.version          = "1.0.0"
+  s.summary          = "A view controller supporting the feature to crop an image."
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESC
-                       DESC
+s.description      = <<-DESC
+This class supports the feature for dragging a rectangle over a UIImageView and returning a UIImage with the pixels beneath the crop rectangle cropped from the underlying image.
+DESC
 
   s.homepage         = "https://github.com/<GITHUB_USERNAME>/MMSCropView"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"

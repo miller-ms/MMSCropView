@@ -1,0 +1,6 @@
+framework module Pods_MMSCropView_Example {
+  umbrella header "Pods-MMSCropView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

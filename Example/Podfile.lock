@@ -1,0 +1,21 @@
+PODS:
+  - FBSnapshotTestCase (2.0.7):
+    - FBSnapshotTestCase/SwiftSupport (= 2.0.7)
+  - FBSnapshotTestCase/Core (2.0.7)
+  - FBSnapshotTestCase/SwiftSupport (2.0.7):
+    - FBSnapshotTestCase/Core
+  - MMSCropView (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - MMSCropView (from `../`)
+
+EXTERNAL SOURCES:
+  MMSCropView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
+  MMSCropView: 58b1886ea12ca5b7136050383a3918e50531dff3
+
+COCOAPODS: 0.39.0

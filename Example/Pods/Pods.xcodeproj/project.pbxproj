@@ -1,0 +1,1026 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000FE426934D76D5320810A3E17B4DD3 /* DragRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC15C3918BB1A64633E5443FD3BBDC0C /* DragRecognizer.swift */; };
+		06FDFF0B76F897FDFC29B352C0397484 /* Pods-MMSCropView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9F67EE5EE947649019F797836716DE2 /* Pods-MMSCropView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		163C6E8E5E7CEE1E0BEEB9CA0939DA3A /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 73003A0752F3CABAA497D1FD1F5E4E44 /* UIImage+Diff.m */; };
+		1F118728B3D74089480152A6B660EA9A /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = A729E2AD854B4CEB4EF52289C017EB3B /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		232F80BDDCA974291CACC477ADA1DFF7 /* MMSCropView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9F0F3DAFE418BDE0CCB7DA33CF99AC /* MMSCropView-dummy.m */; };
+		28F2071FFF5C5B0E9DEB6C3FE43A30CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2393D1A899C707F79A64672C46ED238F /* UIKit.framework */; };
+		32E4ED7920A031E25C9CB16A78C38A35 /* Pods-MMSCropView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C4A91F50BC4BEAE7C0BF789C6573857 /* Pods-MMSCropView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35848D70EAC9237246BDF63457729694 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2523693A8A7BA4278BFC866F16021FFF /* FBSnapshotTestCase.m */; };
+		41D8739E2720D3535592391C25507158 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 12CC4BD9C5F6D514C917D7942DF2D2F4 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52B0263F90696E7FD87CB146D5C5E2C1 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CAAAB29C54DB2D5220028C4110E45E6 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		52F7A46AB0053D8BB1D793B917D37BB2 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE5208FE4A05C9114818BC72105E5F7 /* SwiftSupport.swift */; };
+		5B75B2E9C30100CE7ECCD53934608FAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31B096AB4A0164C61B63F0E59AD76C9 /* Foundation.framework */; };
+		5D14695A69EC4A8DF7488D0FC59C105C /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = E38041D93EDE9398D62F150F8F25DE47 /* FBSnapshotTestCasePlatform.m */; };
+		723FDDFD804188090511DEFA8309A06B /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 0345D737618C6A063BD152389ACCBF87 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		788E3D9458FE9540469981BE9A0B227C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 5999002674B86E70DC7970CEA62F278E /* UIImage+Compare.m */; };
+		7BEF20E09F0E864478905311672F91AB /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AC2C5814DCFC7590AC8C46AAB7FCEEF /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EC16CF7706434ECD1ABFCD79B66B377 /* MMSCropView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 176DDB194C71172CE108F5B82F277FC1 /* MMSCropView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		821A26883ED14BDCD7EBADD37D671D17 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EE4692BF9A76DAAA67A8FF4DABD27E8 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		845EBC63DEA71E841646BB7CAB753079 /* Pods-MMSCropView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 680D80885DDF4DAE9B1A1B44D4CF930F /* Pods-MMSCropView_Tests-dummy.m */; };
+		8D549E01DA1D5104335CCEABFF870005 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31B096AB4A0164C61B63F0E59AD76C9 /* Foundation.framework */; };
+		9D955E9360DFAC91AD56524EB5F82CBB /* UIImage+Cropping.swift in Sources */ = {isa = PBXBuildFile; fileRef = C894F7BD0C46CE17925E54EB3ABB0C51 /* UIImage+Cropping.swift */; };
+		A4E2DAAC3D2442F50F3EDEB359B3A50D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31B096AB4A0164C61B63F0E59AD76C9 /* Foundation.framework */; };
+		A7189C3A46D810E31DADA5FE9D348BF1 /* MMSCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EAA8D8598BBCC7184F72F1FB00EECD /* MMSCropView.swift */; };
+		A8EC74F3BC922B983868F043A22D0D8F /* MMSCropView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 66AA8DDD0851AEBBA8126DF6AC98B365 /* MMSCropView.bundle */; };
+		AA8501741ABB8D75C6C47DE086BACD37 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFD97972C24EE7435D0E04686569BBE /* FBSnapshotTestController.m */; };
+		AD4D905241DED4AEAD67447088ACB23D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 853C84AC883B6FC690E82525E7ECB377 /* XCTest.framework */; };
+		B939EE19E7E7CA65C70CFB6036AAEFFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31B096AB4A0164C61B63F0E59AD76C9 /* Foundation.framework */; };
+		CC2BD0A04199B280AD93F459968CAFC2 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF90F95FC2B36AB64D2FB3AF22E996D2 /* FBSnapshotTestCase-dummy.m */; };
+		CF9DB2096C715EA61E263021EE406DB1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0528444EFC68619AD1FEB8A7CD4A01BA /* QuartzCore.framework */; };
+		EDD91D0CC316AC322E1607D3749F1C0A /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 5121BCE99CCFB208275F3437CCF6EBB6 /* UIImage+Snapshot.m */; };
+		F6CA0153A5DB7DE86C78B51FE7741C89 /* Pods-MMSCropView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C91547870EF2BA261F1BD73AD836C7A3 /* Pods-MMSCropView_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74606E6033024622A0ADFD77FA1E2381 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5C935B614DD08342117AD0B06959CB9;
+			remoteInfo = FBSnapshotTestCase;
+		};
+		8BA2546D7BA327629FE47662DBB6B2C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BE4268D942A8CC375840723872C78F2;
+			remoteInfo = "MMSCropView-MMSCropView";
+		};
+		9E7AAAF8D3EE1D38CB696A5791D02F9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE756D36A95828A2DD7164ACF2043F6F;
+			remoteInfo = MMSCropView;
+		};
+		CFEADDA04AD1D238D4B15527F14E40EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE756D36A95828A2DD7164ACF2043F6F;
+			remoteInfo = MMSCropView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0016D984366F985C4A805E04B38C7515 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0345D737618C6A063BD152389ACCBF87 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		0528444EFC68619AD1FEB8A7CD4A01BA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		0EE4692BF9A76DAAA67A8FF4DABD27E8 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		0F01AA0F45B0B5CC535F9884FF44262A /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
+		12CC4BD9C5F6D514C917D7942DF2D2F4 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		176DDB194C71172CE108F5B82F277FC1 /* MMSCropView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMSCropView-umbrella.h"; sourceTree = "<group>"; };
+		1DA072D841A14D0AF0376F9358E35EBA /* Pods-MMSCropView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMSCropView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		2393D1A899C707F79A64672C46ED238F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		2523693A8A7BA4278BFC866F16021FFF /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
+		268FBA002811B5A4AE81EE09D036690A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CDD9962E7C6687DEEC40FC2F5F6DC17 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D4DE3781233DDE8B955AA7BD37C94CE /* Pods-MMSCropView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MMSCropView_Tests-resources.sh"; sourceTree = "<group>"; };
+		42A681D3AF997235908A3089BB9BCB20 /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
+		44E307D0A744308980583E1C27E0AFDE /* MMSCropView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMSCropView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47AF11E68CEB5085963E31DF04068D40 /* MMSCropView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMSCropView.xcconfig; sourceTree = "<group>"; };
+		4A73C38FDEEA565DF5DBD131422D87C9 /* MMSCropView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MMSCropView.modulemap; sourceTree = "<group>"; };
+		4AC2C5814DCFC7590AC8C46AAB7FCEEF /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
+		4D0212ECABBD0785EB8C6095292F9EDB /* Pods-MMSCropView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MMSCropView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		5121BCE99CCFB208275F3437CCF6EBB6 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
+		51A6BEB384120025A1153A42E1FF7CA6 /* Pods-MMSCropView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MMSCropView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5999002674B86E70DC7970CEA62F278E /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
+		6235A5FCBC9543223740F5AE1E01C1B8 /* Pods-MMSCropView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MMSCropView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		648EAF08258F2B1258FA271E3A8AE72F /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66AA8DDD0851AEBBA8126DF6AC98B365 /* MMSCropView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMSCropView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		66C1A699A90D9833697D4022DBB64703 /* Pods-MMSCropView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMSCropView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		680D80885DDF4DAE9B1A1B44D4CF930F /* Pods-MMSCropView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MMSCropView_Tests-dummy.m"; sourceTree = "<group>"; };
+		68C5D5FE757630544AB6508DCC23BA37 /* Pods-MMSCropView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMSCropView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		6FD70E7D314722D023908B9E33771BCF /* Pods_MMSCropView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMSCropView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		729270AEFDA33E2FEF030EDDFC044BA2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73003A0752F3CABAA497D1FD1F5E4E44 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
+		75EAA8D8598BBCC7184F72F1FB00EECD /* MMSCropView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MMSCropView.swift; sourceTree = "<group>"; };
+		760DA7507EA77A4A47A2E59F7CC5D332 /* Pods-MMSCropView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MMSCropView_Example-resources.sh"; sourceTree = "<group>"; };
+		7CAAAB29C54DB2D5220028C4110E45E6 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
+		853C84AC883B6FC690E82525E7ECB377 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8984704F3D4A4CB6461F33CB56CCE3B6 /* Pods-MMSCropView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MMSCropView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9AE3472FC04DD4168B69C977FD0D9A84 /* Pods_MMSCropView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMSCropView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C4A91F50BC4BEAE7C0BF789C6573857 /* Pods-MMSCropView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MMSCropView_Example-umbrella.h"; sourceTree = "<group>"; };
+		A21DBDC40BA5E9E7E9BD08A036C712AE /* Pods-MMSCropView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMSCropView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A729E2AD854B4CEB4EF52289C017EB3B /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		B3D08C65AB18ACF0D05C7C79DB5737E4 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
+		B8C5ACE7EDA67FBC73543CBBD0B6CE9E /* Pods-MMSCropView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MMSCropView_Example.modulemap"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BFFD97972C24EE7435D0E04686569BBE /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		C894F7BD0C46CE17925E54EB3ABB0C51 /* UIImage+Cropping.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+Cropping.swift"; sourceTree = "<group>"; };
+		C91547870EF2BA261F1BD73AD836C7A3 /* Pods-MMSCropView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MMSCropView_Example-dummy.m"; sourceTree = "<group>"; };
+		D31B096AB4A0164C61B63F0E59AD76C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D4BF086F89C1B92514471F5BD6E25F77 /* Pods-MMSCropView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MMSCropView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DF7649FB8B1EE114515F54029320E5D8 /* MMSCropView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMSCropView-prefix.pch"; sourceTree = "<group>"; };
+		DF90F95FC2B36AB64D2FB3AF22E996D2 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		E38041D93EDE9398D62F150F8F25DE47 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
+		E8188BC38F048AC5DF7AF7608B75F427 /* Pods-MMSCropView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MMSCropView_Tests.modulemap"; sourceTree = "<group>"; };
+		EAD91485CF43763B447331F86F0B091D /* Pods-MMSCropView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MMSCropView_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		EC15C3918BB1A64633E5443FD3BBDC0C /* DragRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DragRecognizer.swift; sourceTree = "<group>"; };
+		EE9F0F3DAFE418BDE0CCB7DA33CF99AC /* MMSCropView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMSCropView-dummy.m"; sourceTree = "<group>"; };
+		F9F67EE5EE947649019F797836716DE2 /* Pods-MMSCropView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MMSCropView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		FDE5208FE4A05C9114818BC72105E5F7 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29EE2ABF753F9EA5370071CB2EF9F4F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E78F55E4566966E9BB51A210EE55294 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B939EE19E7E7CA65C70CFB6036AAEFFA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7692011DCF7657AB4AA5107596970F0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B75B2E9C30100CE7ECCD53934608FAC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96317938B7BBB0DE5B6C6F27B4A6333F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D549E01DA1D5104335CCEABFF870005 /* Foundation.framework in Frameworks */,
+				CF9DB2096C715EA61E263021EE406DB1 /* QuartzCore.framework in Frameworks */,
+				28F2071FFF5C5B0E9DEB6C3FE43A30CC /* UIKit.framework in Frameworks */,
+				AD4D905241DED4AEAD67447088ACB23D /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9D86B33B8DD25F5A12E7961964DFEBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4E2DAAC3D2442F50F3EDEB359B3A50D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD3FB7D37E46A5379C926728A416D78E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C681ACB264C6898BD31A5F338114586 /* Pods-MMSCropView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				268FBA002811B5A4AE81EE09D036690A /* Info.plist */,
+				B8C5ACE7EDA67FBC73543CBBD0B6CE9E /* Pods-MMSCropView_Example.modulemap */,
+				D4BF086F89C1B92514471F5BD6E25F77 /* Pods-MMSCropView_Example-acknowledgements.markdown */,
+				6235A5FCBC9543223740F5AE1E01C1B8 /* Pods-MMSCropView_Example-acknowledgements.plist */,
+				C91547870EF2BA261F1BD73AD836C7A3 /* Pods-MMSCropView_Example-dummy.m */,
+				4D0212ECABBD0785EB8C6095292F9EDB /* Pods-MMSCropView_Example-frameworks.sh */,
+				760DA7507EA77A4A47A2E59F7CC5D332 /* Pods-MMSCropView_Example-resources.sh */,
+				9C4A91F50BC4BEAE7C0BF789C6573857 /* Pods-MMSCropView_Example-umbrella.h */,
+				1DA072D841A14D0AF0376F9358E35EBA /* Pods-MMSCropView_Example.debug.xcconfig */,
+				68C5D5FE757630544AB6508DCC23BA37 /* Pods-MMSCropView_Example.release.xcconfig */,
+			);
+			name = "Pods-MMSCropView_Example";
+			path = "Target Support Files/Pods-MMSCropView_Example";
+			sourceTree = "<group>";
+		};
+		329CC004AB83B695DB001E6BBD6F7707 /* SwiftSupport */ = {
+			isa = PBXGroup;
+			children = (
+				FDE5208FE4A05C9114818BC72105E5F7 /* SwiftSupport.swift */,
+			);
+			name = SwiftSupport;
+			sourceTree = "<group>";
+		};
+		42B18C29C0CC5EAD9B1A3B41012399AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				648EAF08258F2B1258FA271E3A8AE72F /* FBSnapshotTestCase.framework */,
+				66AA8DDD0851AEBBA8126DF6AC98B365 /* MMSCropView.bundle */,
+				44E307D0A744308980583E1C27E0AFDE /* MMSCropView.framework */,
+				6FD70E7D314722D023908B9E33771BCF /* Pods_MMSCropView_Example.framework */,
+				9AE3472FC04DD4168B69C977FD0D9A84 /* Pods_MMSCropView_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		487FFA8F3DC695553F01DADE470C3440 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EC15C3918BB1A64633E5443FD3BBDC0C /* DragRecognizer.swift */,
+				75EAA8D8598BBCC7184F72F1FB00EECD /* MMSCropView.swift */,
+				C894F7BD0C46CE17925E54EB3ABB0C51 /* UIImage+Cropping.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5060B33D8CFD3C2E88D6F156E54E3265 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0EE4692BF9A76DAAA67A8FF4DABD27E8 /* FBSnapshotTestCase.h */,
+				2523693A8A7BA4278BFC866F16021FFF /* FBSnapshotTestCase.m */,
+				12CC4BD9C5F6D514C917D7942DF2D2F4 /* FBSnapshotTestCasePlatform.h */,
+				E38041D93EDE9398D62F150F8F25DE47 /* FBSnapshotTestCasePlatform.m */,
+				4AC2C5814DCFC7590AC8C46AAB7FCEEF /* FBSnapshotTestController.h */,
+				BFFD97972C24EE7435D0E04686569BBE /* FBSnapshotTestController.m */,
+				A729E2AD854B4CEB4EF52289C017EB3B /* UIImage+Compare.h */,
+				5999002674B86E70DC7970CEA62F278E /* UIImage+Compare.m */,
+				7CAAAB29C54DB2D5220028C4110E45E6 /* UIImage+Diff.h */,
+				73003A0752F3CABAA497D1FD1F5E4E44 /* UIImage+Diff.m */,
+				0345D737618C6A063BD152389ACCBF87 /* UIImage+Snapshot.h */,
+				5121BCE99CCFB208275F3437CCF6EBB6 /* UIImage+Snapshot.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		51E09CAE0C39D4BF8F2034109569040D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0016D984366F985C4A805E04B38C7515 /* Info.plist */,
+				4A73C38FDEEA565DF5DBD131422D87C9 /* MMSCropView.modulemap */,
+				47AF11E68CEB5085963E31DF04068D40 /* MMSCropView.xcconfig */,
+				EE9F0F3DAFE418BDE0CCB7DA33CF99AC /* MMSCropView-dummy.m */,
+				DF7649FB8B1EE114515F54029320E5D8 /* MMSCropView-prefix.pch */,
+				176DDB194C71172CE108F5B82F277FC1 /* MMSCropView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MMSCropView";
+			sourceTree = "<group>";
+		};
+		69162AE3968A01317E0D3369DC52103F /* Pods-MMSCropView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				729270AEFDA33E2FEF030EDDFC044BA2 /* Info.plist */,
+				E8188BC38F048AC5DF7AF7608B75F427 /* Pods-MMSCropView_Tests.modulemap */,
+				8984704F3D4A4CB6461F33CB56CCE3B6 /* Pods-MMSCropView_Tests-acknowledgements.markdown */,
+				51A6BEB384120025A1153A42E1FF7CA6 /* Pods-MMSCropView_Tests-acknowledgements.plist */,
+				680D80885DDF4DAE9B1A1B44D4CF930F /* Pods-MMSCropView_Tests-dummy.m */,
+				EAD91485CF43763B447331F86F0B091D /* Pods-MMSCropView_Tests-frameworks.sh */,
+				3D4DE3781233DDE8B955AA7BD37C94CE /* Pods-MMSCropView_Tests-resources.sh */,
+				F9F67EE5EE947649019F797836716DE2 /* Pods-MMSCropView_Tests-umbrella.h */,
+				66C1A699A90D9833697D4022DBB64703 /* Pods-MMSCropView_Tests.debug.xcconfig */,
+				A21DBDC40BA5E9E7E9BD08A036C712AE /* Pods-MMSCropView_Tests.release.xcconfig */,
+			);
+			name = "Pods-MMSCropView_Tests";
+			path = "Target Support Files/Pods-MMSCropView_Tests";
+			sourceTree = "<group>";
+		};
+		7919721406D217CDD1AADD93281DD34C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF38B478BC694B07940B7FBA7C6EB264 /* MMSCropView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				7919721406D217CDD1AADD93281DD34C /* Development Pods */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				FBD2D672921284E66F309CA3462F84D6 /* Pods */,
+				42B18C29C0CC5EAD9B1A3B41012399AE /* Products */,
+				999500AA1F9ACEC3E9B99E486B0C740C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8004835372142699707E98D241D8C23D /* FBSnapshotTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				5060B33D8CFD3C2E88D6F156E54E3265 /* Core */,
+				A78CE87681B42105A65DA44E0F79FC82 /* Support Files */,
+				329CC004AB83B695DB001E6BBD6F7707 /* SwiftSupport */,
+			);
+			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		953C248419FACC0C59D82A7A80493760 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				487FFA8F3DC695553F01DADE470C3440 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		999500AA1F9ACEC3E9B99E486B0C740C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C681ACB264C6898BD31A5F338114586 /* Pods-MMSCropView_Example */,
+				69162AE3968A01317E0D3369DC52103F /* Pods-MMSCropView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A78CE87681B42105A65DA44E0F79FC82 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F01AA0F45B0B5CC535F9884FF44262A /* FBSnapshotTestCase.modulemap */,
+				42A681D3AF997235908A3089BB9BCB20 /* FBSnapshotTestCase.xcconfig */,
+				DF90F95FC2B36AB64D2FB3AF22E996D2 /* FBSnapshotTestCase-dummy.m */,
+				B3D08C65AB18ACF0D05C7C79DB5737E4 /* FBSnapshotTestCase-prefix.pch */,
+				3CDD9962E7C6687DEEC40FC2F5F6DC17 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FBSnapshotTestCase";
+			sourceTree = "<group>";
+		};
+		AF38B478BC694B07940B7FBA7C6EB264 /* MMSCropView */ = {
+			isa = PBXGroup;
+			children = (
+				953C248419FACC0C59D82A7A80493760 /* Pod */,
+				51E09CAE0C39D4BF8F2034109569040D /* Support Files */,
+			);
+			name = MMSCropView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CD3FB7D37E46A5379C926728A416D78E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D31B096AB4A0164C61B63F0E59AD76C9 /* Foundation.framework */,
+				0528444EFC68619AD1FEB8A7CD4A01BA /* QuartzCore.framework */,
+				2393D1A899C707F79A64672C46ED238F /* UIKit.framework */,
+				853C84AC883B6FC690E82525E7ECB377 /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FBD2D672921284E66F309CA3462F84D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8004835372142699707E98D241D8C23D /* FBSnapshotTestCase */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		683D5A5114A38214D02E09E490A2AB25 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EC16CF7706434ECD1ABFCD79B66B377 /* MMSCropView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A3BB9E32BDAD9EDB00EDFE657BDB001 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				821A26883ED14BDCD7EBADD37D671D17 /* FBSnapshotTestCase.h in Headers */,
+				41D8739E2720D3535592391C25507158 /* FBSnapshotTestCasePlatform.h in Headers */,
+				7BEF20E09F0E864478905311672F91AB /* FBSnapshotTestController.h in Headers */,
+				1F118728B3D74089480152A6B660EA9A /* UIImage+Compare.h in Headers */,
+				52B0263F90696E7FD87CB146D5C5E2C1 /* UIImage+Diff.h in Headers */,
+				723FDDFD804188090511DEFA8309A06B /* UIImage+Snapshot.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE27A9E73F44D84A416652BA52DBBA4F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06FDFF0B76F897FDFC29B352C0397484 /* Pods-MMSCropView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F775F89684AFAE309EA04FD4A5FDC9F5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32E4ED7920A031E25C9CB16A78C38A35 /* Pods-MMSCropView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0017C4D3DF8B06724A35954AEEB18BFE /* Pods-MMSCropView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7982178BD5ACF42A092357A8C66AED86 /* Build configuration list for PBXNativeTarget "Pods-MMSCropView_Tests" */;
+			buildPhases = (
+				D7801C3886A689D4C56DC5D20858ABD0 /* Sources */,
+				D9D86B33B8DD25F5A12E7961964DFEBB /* Frameworks */,
+				BE27A9E73F44D84A416652BA52DBBA4F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56F9C0CE0E329A0376197C1ADD181B3C /* PBXTargetDependency */,
+				854D6E61D00B8898CFE34D36449C98F0 /* PBXTargetDependency */,
+			);
+			name = "Pods-MMSCropView_Tests";
+			productName = "Pods-MMSCropView_Tests";
+			productReference = 9AE3472FC04DD4168B69C977FD0D9A84 /* Pods_MMSCropView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7BE4268D942A8CC375840723872C78F2 /* MMSCropView-MMSCropView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26812F2B68A7D7F1605FE21B681ACBFB /* Build configuration list for PBXNativeTarget "MMSCropView-MMSCropView" */;
+			buildPhases = (
+				A162FD60B51E036FAC124EB6E77C0886 /* Sources */,
+				29EE2ABF753F9EA5370071CB2EF9F4F0 /* Frameworks */,
+				528CE83846B482DB0E711BDD17B585B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MMSCropView-MMSCropView";
+			productName = "MMSCropView-MMSCropView";
+			productReference = 66AA8DDD0851AEBBA8126DF6AC98B365 /* MMSCropView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		A5C935B614DD08342117AD0B06959CB9 /* FBSnapshotTestCase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EDC9486793060341F389ED396820195 /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */;
+			buildPhases = (
+				2CC3E7452D970C2994AA3AB9C9EBB620 /* Sources */,
+				96317938B7BBB0DE5B6C6F27B4A6333F /* Frameworks */,
+				6A3BB9E32BDAD9EDB00EDFE657BDB001 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBSnapshotTestCase;
+			productName = FBSnapshotTestCase;
+			productReference = 648EAF08258F2B1258FA271E3A8AE72F /* FBSnapshotTestCase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B8950D49DEBA006ACFFE0AA9DA99225E /* Pods-MMSCropView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C7BDA4663BC14CB3114B2E0014DFDA3 /* Build configuration list for PBXNativeTarget "Pods-MMSCropView_Example" */;
+			buildPhases = (
+				0C0BDD74CF10098228DFB0FA4BA4682F /* Sources */,
+				5E78F55E4566966E9BB51A210EE55294 /* Frameworks */,
+				F775F89684AFAE309EA04FD4A5FDC9F5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D7345418B2029CB66FBF05156A5D184 /* PBXTargetDependency */,
+			);
+			name = "Pods-MMSCropView_Example";
+			productName = "Pods-MMSCropView_Example";
+			productReference = 6FD70E7D314722D023908B9E33771BCF /* Pods_MMSCropView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE756D36A95828A2DD7164ACF2043F6F /* MMSCropView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B874FCD719302936731D7C90D60EE28 /* Build configuration list for PBXNativeTarget "MMSCropView" */;
+			buildPhases = (
+				A8760535BD280469B90A5CE5D96F1362 /* Sources */,
+				7692011DCF7657AB4AA5107596970F0C /* Frameworks */,
+				CF05E82B030B48D862EC96CF65C98339 /* Resources */,
+				683D5A5114A38214D02E09E490A2AB25 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66E232129771684CA1D7BFA6D3B9FF0D /* PBXTargetDependency */,
+			);
+			name = MMSCropView;
+			productName = MMSCropView;
+			productReference = 44E307D0A744308980583E1C27E0AFDE /* MMSCropView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 42B18C29C0CC5EAD9B1A3B41012399AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5C935B614DD08342117AD0B06959CB9 /* FBSnapshotTestCase */,
+				CE756D36A95828A2DD7164ACF2043F6F /* MMSCropView */,
+				7BE4268D942A8CC375840723872C78F2 /* MMSCropView-MMSCropView */,
+				B8950D49DEBA006ACFFE0AA9DA99225E /* Pods-MMSCropView_Example */,
+				0017C4D3DF8B06724A35954AEEB18BFE /* Pods-MMSCropView_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		528CE83846B482DB0E711BDD17B585B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF05E82B030B48D862EC96CF65C98339 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8EC74F3BC922B983868F043A22D0D8F /* MMSCropView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C0BDD74CF10098228DFB0FA4BA4682F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6CA0153A5DB7DE86C78B51FE7741C89 /* Pods-MMSCropView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CC3E7452D970C2994AA3AB9C9EBB620 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC2BD0A04199B280AD93F459968CAFC2 /* FBSnapshotTestCase-dummy.m in Sources */,
+				35848D70EAC9237246BDF63457729694 /* FBSnapshotTestCase.m in Sources */,
+				5D14695A69EC4A8DF7488D0FC59C105C /* FBSnapshotTestCasePlatform.m in Sources */,
+				AA8501741ABB8D75C6C47DE086BACD37 /* FBSnapshotTestController.m in Sources */,
+				52F7A46AB0053D8BB1D793B917D37BB2 /* SwiftSupport.swift in Sources */,
+				788E3D9458FE9540469981BE9A0B227C /* UIImage+Compare.m in Sources */,
+				163C6E8E5E7CEE1E0BEEB9CA0939DA3A /* UIImage+Diff.m in Sources */,
+				EDD91D0CC316AC322E1607D3749F1C0A /* UIImage+Snapshot.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A162FD60B51E036FAC124EB6E77C0886 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8760535BD280469B90A5CE5D96F1362 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000FE426934D76D5320810A3E17B4DD3 /* DragRecognizer.swift in Sources */,
+				232F80BDDCA974291CACC477ADA1DFF7 /* MMSCropView-dummy.m in Sources */,
+				A7189C3A46D810E31DADA5FE9D348BF1 /* MMSCropView.swift in Sources */,
+				9D955E9360DFAC91AD56524EB5F82CBB /* UIImage+Cropping.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7801C3886A689D4C56DC5D20858ABD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845EBC63DEA71E841646BB7CAB753079 /* Pods-MMSCropView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56F9C0CE0E329A0376197C1ADD181B3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSnapshotTestCase;
+			target = A5C935B614DD08342117AD0B06959CB9 /* FBSnapshotTestCase */;
+			targetProxy = 74606E6033024622A0ADFD77FA1E2381 /* PBXContainerItemProxy */;
+		};
+		66E232129771684CA1D7BFA6D3B9FF0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MMSCropView-MMSCropView";
+			target = 7BE4268D942A8CC375840723872C78F2 /* MMSCropView-MMSCropView */;
+			targetProxy = 8BA2546D7BA327629FE47662DBB6B2C1 /* PBXContainerItemProxy */;
+		};
+		7D7345418B2029CB66FBF05156A5D184 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MMSCropView;
+			target = CE756D36A95828A2DD7164ACF2043F6F /* MMSCropView */;
+			targetProxy = CFEADDA04AD1D238D4B15527F14E40EA /* PBXContainerItemProxy */;
+		};
+		854D6E61D00B8898CFE34D36449C98F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MMSCropView;
+			target = CE756D36A95828A2DD7164ACF2043F6F /* MMSCropView */;
+			targetProxy = 9E7AAAF8D3EE1D38CB696A5791D02F9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		38B4C75A1BA96A68D7C5618ED3C7460F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47AF11E68CEB5085963E31DF04068D40 /* MMSCropView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MMSCropView/MMSCropView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMSCropView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MMSCropView/MMSCropView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MMSCropView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3C5EEA45CCEFC9F89E6BCE8BCB5C5D94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42A681D3AF997235908A3089BB9BCB20 /* FBSnapshotTestCase.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		44BA3014B49952E76A5316839D839B3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66C1A699A90D9833697D4022DBB64703 /* Pods-MMSCropView_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MMSCropView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MMSCropView_Tests/Pods-MMSCropView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MMSCropView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5413E689D391B316EC89015D65EE9BC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47AF11E68CEB5085963E31DF04068D40 /* MMSCropView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = MMSCropView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		54844AA65FE3DDF0DECE291DC2AAC609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42A681D3AF997235908A3089BB9BCB20 /* FBSnapshotTestCase.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8BB153CBDD3219D236C1AC20BE9B008E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68C5D5FE757630544AB6508DCC23BA37 /* Pods-MMSCropView_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MMSCropView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MMSCropView_Example/Pods-MMSCropView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MMSCropView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8CC0A1392B9FFB78714F2F66C1401FDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A21DBDC40BA5E9E7E9BD08A036C712AE /* Pods-MMSCropView_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MMSCropView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MMSCropView_Tests/Pods-MMSCropView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MMSCropView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A0E7EFEB96F50CD58ECE37A168D0D6C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47AF11E68CEB5085963E31DF04068D40 /* MMSCropView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = MMSCropView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C5A18280E9321A9268D1C80B7DA43967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DACA7A76B8335F23BE8E4597BE4887E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DA072D841A14D0AF0376F9358E35EBA /* Pods-MMSCropView_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MMSCropView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MMSCropView_Example/Pods-MMSCropView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MMSCropView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E1AB22F50FEB0EE2F59380EE94C08D3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47AF11E68CEB5085963E31DF04068D40 /* MMSCropView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MMSCropView/MMSCropView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMSCropView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MMSCropView/MMSCropView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MMSCropView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0EDC9486793060341F389ED396820195 /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C5EEA45CCEFC9F89E6BCE8BCB5C5D94 /* Debug */,
+				54844AA65FE3DDF0DECE291DC2AAC609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C7BDA4663BC14CB3114B2E0014DFDA3 /* Build configuration list for PBXNativeTarget "Pods-MMSCropView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DACA7A76B8335F23BE8E4597BE4887E4 /* Debug */,
+				8BB153CBDD3219D236C1AC20BE9B008E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26812F2B68A7D7F1605FE21B681ACBFB /* Build configuration list for PBXNativeTarget "MMSCropView-MMSCropView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0E7EFEB96F50CD58ECE37A168D0D6C1 /* Debug */,
+				5413E689D391B316EC89015D65EE9BC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B874FCD719302936731D7C90D60EE28 /* Build configuration list for PBXNativeTarget "MMSCropView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1AB22F50FEB0EE2F59380EE94C08D3D /* Debug */,
+				38B4C75A1BA96A68D7C5618ED3C7460F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D1534490D941DCA47C62AC4314182AF /* Debug */,
+				C5A18280E9321A9268D1C80B7DA43967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7982178BD5ACF42A092357A8C66AED86 /* Build configuration list for PBXNativeTarget "Pods-MMSCropView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44BA3014B49952E76A5316839D839B3B /* Debug */,
+				8CC0A1392B9FFB78714F2F66C1401FDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
