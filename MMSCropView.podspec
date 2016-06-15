@@ -15,7 +15,7 @@ s.description      = <<-DESC
 This class supports the feature for dragging a rectangle over a UIImageView and returning a UIImage with the pixels beneath the crop rectangle cropped from the underlying image.
 DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/MMSCropView"
+  s.homepage         = "https://github.com/miller-ms/MMSCropView"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "William Miller" => "support@millermobilesoft.com" }
