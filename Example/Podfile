@@ -1,11 +1,11 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'MMSCropView_Example', :exclusive => true do
+target 'MMSCropView_Example' do
   pod 'MMSCropView', :path => '../'
 end
 
-target 'MMSCropView_Tests', :exclusive => true do
+target 'MMSCropView_Tests' do
   pod 'MMSCropView', :path => '../'
 
   pod 'FBSnapshotTestCase'

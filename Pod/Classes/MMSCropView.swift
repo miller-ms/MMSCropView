@@ -103,19 +103,19 @@ public class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
         
         addSubview(cropView) // add the cropView to the imageView
         
-        dragGesture.addTarget(self, action: "dragRectangle:")
+        dragGesture.addTarget(self, action: #selector(dragRectangle(_:)))
         
         dragGesture.delegate = self
 
         addGestureRecognizer(dragGesture)
         
-        hideGesture.addTarget(self, action: "hideCropRectangle:")
+        hideGesture.addTarget(self, action: #selector(hideCropRectangle(_:)))
         
         hideGesture.delegate = self;
 
         addGestureRecognizer(hideGesture)
         
-        moveGesture.addTarget(self, action: "moveRectangle:")
+        moveGesture.addTarget(self, action: #selector(moveRectangle(_:)))
         
         moveGesture.delegate = self
         
