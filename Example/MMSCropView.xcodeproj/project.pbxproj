@@ -37,7 +37,7 @@
 		2C82DD791C990591003EE150 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2C84F7B81CA14A4F00A6FAD0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
 		2C9CF9141CA0A67B004AD139 /* CHANGEME.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGEME.md; path = ../CHANGEME.md; sourceTree = "<group>"; };
-		2CF0CE1E1C98F0CE00AF16FB /* cropexample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cropexample.jpg; path = ../../../../../../Pictures/cropexample.jpg; sourceTree = "<group>"; };
+		2CF0CE1E1C98F0CE00AF16FB /* cropexample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cropexample.jpg; path = ../cropexample.jpg; sourceTree = "<group>"; };
 		3F05F01527B4837CC410937D /* Pods-MMSCropView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMSCropView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMSCropView_Example/Pods-MMSCropView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MMSCropView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMSCropView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
