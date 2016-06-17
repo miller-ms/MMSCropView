@@ -77,7 +77,7 @@ This project is is available under the MIT license. See the LICENSE file for mor
 This class provides the feature to draw a rectangle over an image by dragging a finger over it, move it, and extract the covered region into a UIImage.
 
 <p align="center">
-<img src="Screenshot.png" alt="Sample">
+<img src="screenshot.png" alt="Sample">
 </p>
 
 A simple image cropper.

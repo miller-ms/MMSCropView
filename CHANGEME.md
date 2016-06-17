@@ -3,11 +3,18 @@ All notable changes to this project will be documented in this file.
 `MMSCropView` adheres to [Semantic Versioning](http://semver.org/).
 
 
+## [1.0.2](https://github.com/miller-ms/MMSCropView/releases/tag/1.0.2)
+Released on 2016-06-17. 
+
+#### Added
+- Updated error in reference to screenshot in readme file.
+- Added by [William Miller](https://github.com/miller-ms).
+
 ## [1.0.1](https://github.com/miller-ms/MMSCropView/releases/tag/1.0.1)
 Released on 2016-06-17. 
 
 #### Added
-- Initial release of MMSCropView for general availability.
+- Corrected links in readme file.
 - Added by [William Miller](https://github.com/miller-ms).
 
 ## [1.0.0](https://github.com/miller-ms/MMSCropView/releases/tag/1.0.0)
