@@ -1,6 +1,6 @@
 # MMSCropView
 
-[![CI Status](http://img.shields.io/travis/William Miller/MMSCropView.svg?style=flat)](https://travis-ci.org/William Miller/MMSCropView)
+[![CI Status](http://img.shields.io/travis/miller-ms/MMSCropView.svg?style=flat)](https://travis-ci.org/miller-ms/MMSCropView)
 [![Version](https://img.shields.io/cocoapods/v/MMSCropView.svg?style=flat)](http://cocoapods.org/pods/MMSCropView)
 [![License](https://img.shields.io/cocoapods/l/MMSCropView.svg?style=flat)](http://cocoapods.org/pods/MMSCropView)
 [![Platform](https://img.shields.io/cocoapods/p/MMSCropView.svg?style=flat)](http://cocoapods.org/pods/MMSCropView)
