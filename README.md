@@ -4,7 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/MMSCropView.svg?style=flat)](http://cocoapods.org/pods/MMSCropView)
 [![License](https://img.shields.io/cocoapods/l/MMSCropView.svg?style=flat)](http://cocoapods.org/pods/MMSCropView)
 [![Platform](https://img.shields.io/cocoapods/p/MMSCropView.svg?style=flat)](http://cocoapods.org/pods/MMSCropView)
-[![Readme Score](http://readme-score-api.herokuapp.com/score.svg?url=miller-ms/mmsprofileimagepicker)](http://clayallsopp.github.io/readme-score?url=miller-ms/MMSCropView)
+[![Readme Score](http://readme-score-api.herokuapp.com/score.svg?url=miller-ms/MMSCropView)](http://clayallsopp.github.io/readme-score?url=miller-ms/MMSCropView)
 
 This class provides the feature to draw a rectangle over an image by dragging a finger over it, move it, and extract the covered region into a UIImage.
 
