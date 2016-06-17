@@ -15,22 +15,12 @@ s.description      = <<-DESC
 This class supports the feature for dragging a rectangle over a UIImageView and returning a UIImage with the pixels beneath the crop rectangle cropped from the underlying image.
 DESC
 
-  s.homepage         = "https://github.com/miller-ms/MMSCropView"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
-  s.license          = 'MIT'
-  s.author           = { "William Miller" => "support@millermobilesoft.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/MMSCropView.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.platform     = :ios, '8.0'
+  s.homepage     = "https://github.com/miller-ms/MMSCropView"
+  s.screenshots  = "https://s3.amazonaws.com/mms.assets/cocoapods/mmscropview/screenshot.gif"
+  s.license      = 'MIT'
+  s.author       = { "William Miller" => "support@millermobilesoft.com" }
+  s.source       = { :git => "https://github.com/<GITHUB_USERNAME>/MMSCropView.git", :tag => s.version.to_s }
+  s.platform     = :ios, '8.3'
   s.requires_arc = true
-
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'MMSCropView' => ['Pod/Assets/*.png']
-  }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

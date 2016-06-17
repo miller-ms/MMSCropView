@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C246ACA1D103596001E45CA /* MMSCropView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C246AC91D103596001E45CA /* MMSCropView.framework */; };
+		2C246AD21D12D851001E45CA /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C246AD11D12D851001E45CA /* screenshot.png */; };
 		2C82DD7A1C990591003EE150 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C82DD791C990591003EE150 /* UIKit.framework */; };
 		2CF0CE1F1C98F0CE00AF16FB /* cropexample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CF0CE1E1C98F0CE00AF16FB /* cropexample.jpg */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -34,6 +35,7 @@
 		112BBDDB4C05EDEC1AA98B72 /* Pods-MMSCropView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMSCropView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMSCropView_Tests/Pods-MMSCropView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2C246AC01D103151001E45CA /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 		2C246AC91D103596001E45CA /* MMSCropView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MMSCropView.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/MMSCropView-faawvtetxofgohdvkjpqewhiimto/Build/Products/Debug-iphonesimulator/MMSCropView.framework"; sourceTree = "<group>"; };
+		2C246AD11D12D851001E45CA /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = screenshot.png; path = ../screenshot.png; sourceTree = "<group>"; };
 		2C82DD791C990591003EE150 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2C84F7B81CA14A4F00A6FAD0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
 		2C9CF9141CA0A67B004AD139 /* CHANGEME.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGEME.md; path = ../CHANGEME.md; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				2C246AD11D12D851001E45CA /* screenshot.png */,
 				2C246AC01D103151001E45CA /* .travis.yml */,
 				2C9CF9141CA0A67B004AD139 /* CHANGEME.md */,
 				992623DA63E1B8DA9E180F5A /* MMSCropView.podspec */,
@@ -267,6 +270,7 @@
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				2CF0CE1F1C98F0CE00AF16FB /* cropexample.jpg in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				2C246AD21D12D851001E45CA /* screenshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +511,7 @@
 			baseConfigurationReference = 3F05F01527B4837CC410937D /* Pods-MMSCropView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PODS_CONFIGURATION_BUILD_DIR)/MMSCropView",
@@ -524,6 +529,7 @@
 			baseConfigurationReference = B0B1032A5A51174C8282DDD7 /* Pods-MMSCropView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PODS_CONFIGURATION_BUILD_DIR)/MMSCropView",
