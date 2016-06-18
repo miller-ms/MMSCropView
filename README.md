@@ -7,21 +7,16 @@
 [![Readme Score](http://readme-score-api.herokuapp.com/score.svg?url=miller-ms/MMSCropView)](http://clayallsopp.github.io/readme-score?url=miller-ms/MMSCropView)
 
 This class provides the feature to draw a rectangle over an image by dragging a finger over it, move it, and extract the covered region into a UIImage.
-
 <p align="center">
 <img src="screenshot.png" alt="Sample">
 </p>
-
 A simple image cropper.
-
 ## Usage
-
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 In your storyboard select the custom class MMSCropImageView for the Image View widget.
 
 Import the class header.
-
 ``` swift
 import MMSCropView
 ```
@@ -36,7 +31,6 @@ Add an event handler to initiate the crop action and call the crop method on the
     croppedImageView.image = croppedImage
 
 }
-
 ```
 
 ## Requirements
