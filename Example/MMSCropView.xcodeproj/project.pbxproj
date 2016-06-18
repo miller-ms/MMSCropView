@@ -10,6 +10,7 @@
 		2C246ACA1D103596001E45CA /* MMSCropView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C246AC91D103596001E45CA /* MMSCropView.framework */; };
 		2C246AD21D12D851001E45CA /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C246AD11D12D851001E45CA /* screenshot.png */; };
 		2C82DD7A1C990591003EE150 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C82DD791C990591003EE150 /* UIKit.framework */; };
+		2CB3E9D81D15F6B2007B11EF /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 2CB3E9D71D15F6B2007B11EF /* CHANGELOG.md */; };
 		2CF0CE1F1C98F0CE00AF16FB /* cropexample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CF0CE1E1C98F0CE00AF16FB /* cropexample.jpg */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -38,7 +39,7 @@
 		2C246AD11D12D851001E45CA /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = screenshot.png; path = ../screenshot.png; sourceTree = "<group>"; };
 		2C82DD791C990591003EE150 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2C84F7B81CA14A4F00A6FAD0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
-		2C9CF9141CA0A67B004AD139 /* CHANGEME.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGEME.md; path = ../CHANGEME.md; sourceTree = "<group>"; };
+		2CB3E9D71D15F6B2007B11EF /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		2CF0CE1E1C98F0CE00AF16FB /* cropexample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cropexample.jpg; path = ../cropexample.jpg; sourceTree = "<group>"; };
 		3F05F01527B4837CC410937D /* Pods-MMSCropView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMSCropView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMSCropView_Example/Pods-MMSCropView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MMSCropView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMSCropView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,9 +169,9 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				2CB3E9D71D15F6B2007B11EF /* CHANGELOG.md */,
 				2C246AD11D12D851001E45CA /* screenshot.png */,
 				2C246AC01D103151001E45CA /* .travis.yml */,
-				2C9CF9141CA0A67B004AD139 /* CHANGEME.md */,
 				992623DA63E1B8DA9E180F5A /* MMSCropView.podspec */,
 				6BAFB59C88B56C4B329E7070 /* README.md */,
 				B11D5700AF01AFC924B273B0 /* LICENSE */,
@@ -382,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				2CB3E9D81D15F6B2007B11EF /* CHANGELOG.md in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
