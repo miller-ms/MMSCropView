@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 `MMSCropView` adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.3](https://github.com/miller-ms/MMSCropView/releases/tag/1.0.3)
+Released on 2016-06-18. 
+
+#### Added
+- Corrected readme file to reflect the swift implementation. It was formerly written in objective-c.
+- Added by [William Miller](https://github.com/miller-ms).
 
 ## [1.0.2](https://github.com/miller-ms/MMSCropView/releases/tag/1.0.2)
 Released on 2016-06-17. 
