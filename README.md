@@ -10,7 +10,6 @@ This class provides the feature to draw a rectangle over an image by dragging a 
 <p align="center">
 <img src="screenshot.png" alt="Sample">
 </p>
-A simple image cropper.
 ## Usage
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
