@@ -8,7 +8,7 @@
 
 This class provides the feature to draw a rectangle over an image by dragging a finger over it, move it, and extract the covered region into a UIImage.
 <p align="center">
-<img src="screenshot.png" alt="Sample">
+<img src="screenshot.gif” alt="Sample">
 </p>
 ## Usage
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
