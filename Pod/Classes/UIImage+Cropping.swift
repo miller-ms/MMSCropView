@@ -129,17 +129,17 @@ public extension UIImage {
         
         }
         
-        let context = CGBitmapContextCreate(nil, Int(scaleSize.width), Int(scaleSize.height), CGImageGetBitsPerComponent(CGImage), 0, CGImageGetColorSpace(CGImage), CGImageGetBitmapInfo(CGImage).rawValue)
+        let context = CGBitmapContextCreate(nil, Int(scaleSize.width), Int(scaleSize.height), CGImageGetBitsPerComponent(CGImage!), 0, CGImageGetColorSpace(CGImage!)!, CGImageGetBitmapInfo(CGImage!).rawValue)
         
         var returnImg = UIImage(CGImage:CGImage!)
         
         if context != nil {
             
-            CGContextDrawImage(context, CGRectMake(0, 0, scaleSize.width, scaleSize.height), CGImage)
+            CGContextDrawImage(context!, CGRectMake(0, 0, scaleSize.width, scaleSize.height), CGImage!)
             
             /* realize the CGImage from the context.
             */
-            let imgRef = CGBitmapContextCreateImage(context)
+            let imgRef = CGBitmapContextCreateImage(context!)
             
             /* realize the CGImage into a UIImage.
             */
@@ -253,7 +253,7 @@ public extension UIImage {
         
         /* crop the resized image to the crop rectangel.
         */
-        let cropCGImage = CGImageCreateWithImageInRect(img.CGImage, transposeCropRect(cropRect, inDimension: rndFrameSize, forOrientation: imageOrientation))
+        let cropCGImage = CGImageCreateWithImageInRect(img.CGImage!, transposeCropRect(cropRect, inDimension: rndFrameSize, forOrientation: imageOrientation))
         
         let croppedImg = UIImage(CGImage: cropCGImage!, scale: 1.0, orientation: imageOrientation)
         

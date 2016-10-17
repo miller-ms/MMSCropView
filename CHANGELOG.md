@@ -2,13 +2,21 @@
 All notable changes to this project will be documented in this file.
 `MMSCropView` adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.1.0](https://github.com/miller-ms/MMSCropView/releases/tag/1.1.0)
+Released on 2016-10-17. 
+#### Updated
+- Crop returns the original image when the crop region falls outside view frame.
+- Updated to support xcode8 but left the project in swift 2.3
+- Updated all the dependent pods.
+ - Added by [William Miller](https://github.com/miller-ms).
+
 ## [1.0.5](https://github.com/miller-ms/MMSCropView/releases/tag/1.0.5)
 Released on 2016-06-18. 
 
 #### Added
 - Renamed the file changeme.md to changelog.md.
 - Added by [William Miller](https://github.com/miller-ms).
-- 
+
 ## [1.0.4](https://github.com/miller-ms/MMSCropView/releases/tag/1.0.4)
 Released on 2016-06-18. 
 

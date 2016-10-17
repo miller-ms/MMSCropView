@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "MMSCropView"
-  s.version          = "1.0.5"
+  s.version          = "1.1.0"
   s.summary          = "A view controller supporting the feature to crop an image."
 
 s.description      = <<-DESC

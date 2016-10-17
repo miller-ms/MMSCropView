@@ -427,6 +427,12 @@ public class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
     */
     public func crop() -> UIImage {
         
+        
+        // Make sure the crop frame is within the bounds of the image.
+        guard cropView.frame.origin.x >= 0 && cropView.frame.origin.y >= 0 && cropView.frame.height > 0 && cropView.frame.width > 0 && cropView.frame.origin.x + cropView.frame.width <= frame.width && cropView.frame.origin.y + cropView.frame.height <= frame.height else {
+            return image!
+        }
+        
         let croppedImage = image!.cropRectangle(cropView.frame, inFrame:frame.size)
         
         return croppedImage
