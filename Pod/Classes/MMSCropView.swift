@@ -28,14 +28,14 @@
 
 import UIKit
 
-public class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
+open class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
 
     
     /// The dragOrigin is the first point the user touched to begin the drag operation to delineate the crop rectangle.
-    var dragOrigin = CGPointZero
+    var dragOrigin = CGPoint.zero
     
     /// The rectangular view that the user sizes over the image to delineate the crop rectangle
-    var cropView = UIView(frame: CGRectMake(-1.0, -1.0, -1.0, -1.0))
+    var cropView = UIView(frame: CGRect(x: -1.0, y: -1.0, width: -1.0, height: -1.0))
     
     /// Gesture recognizer for delineating the crop rectangle attached to the imageView
     var dragGesture = DragRecognizer()
@@ -50,7 +50,7 @@ public class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
     var moveGesture = UIPanGestureRecognizer()
     
     /// The first touchpoint when the user began moving the cropView
-    var touchOrigin = CGPointZero
+    var touchOrigin = CGPoint.zero
     
     /// Layer that obscures the outside region of the crop rectangle
     var maskLayer = CAShapeLayer()
@@ -62,7 +62,7 @@ public class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
     let transparentOpacity = Float(0.0)
     
     /// The color for the shaded area outside the crop rectangle is black.
-    let maskColor = (UIColor).blackColor()
+    let maskColor = (UIColor).black
     
     override public init(frame: CGRect) {
         
@@ -89,17 +89,17 @@ public class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
     func initializeInstance() {
         
         // Enable user interaction
-        userInteractionEnabled = true
+        isUserInteractionEnabled = true
         
-        cropView.hidden = true; // the cropView is modestly transparent
+        cropView.isHidden = true; // the cropView is modestly transparent
         
-        cropView.backgroundColor =  UIColor.clearColor() // background color is white
+        cropView.backgroundColor =  UIColor.clear // background color is white
         
         cropView.alpha = 1.0 // the background is modestly transparent
         
         cropView.layer.borderWidth = 0.5 // the crop rectangle has a solid border
         
-        cropView.layer.borderColor = UIColor.whiteColor().CGColor // the crop border is white
+        cropView.layer.borderColor = UIColor.white.cgColor // the crop border is white
         
         addSubview(cropView) // add the cropView to the imageView
         
@@ -125,7 +125,7 @@ public class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
         
         maskLayer.fillRule = kCAFillRuleEvenOdd
         
-        maskLayer.fillColor = maskColor.CGColor
+        maskLayer.fillColor = maskColor.cgColor
         
         maskLayer.opacity = transparentOpacity
         
@@ -141,16 +141,16 @@ public class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
      
      - returns: returns the mask
      */
-    func calculateMaskLayer (mask:CAShapeLayer, cropRect: CGRect) -> CAShapeLayer {
+    func calculateMaskLayer (_ mask:CAShapeLayer, cropRect: CGRect) -> CAShapeLayer {
         
         // Create a rectangular path to enclose the circular path within the bounds of the passed in layer size.        
         let outsidePath = UIBezierPath(rect: bounds)
         
         let insidePath = UIBezierPath(rect: cropRect)
         
-        outsidePath.appendPath(insidePath)
+        outsidePath.append(insidePath)
         
-        mask.path = outsidePath.CGPath;
+        mask.path = outsidePath.cgPath;
         
         return mask
 
@@ -163,7 +163,7 @@ public class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
      
      - returns: returns true to recognize the gesture.
      */
-    override public func gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer) -> Bool {
+    override open func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         
         return true
         
@@ -177,12 +177,12 @@ public class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
      
      - returns: Returns true to detect the tap gesture and pan gesture simultaneously.
      */
-    public func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+    open func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         
         
         /* Enable to recognize the pan and tap gestures simultaneous for both the imageView and cropView
         */
-        if gestureRecognizer.isKindOfClass(UITapGestureRecognizer) && otherGestureRecognizer.isKindOfClass(UIPanGestureRecognizer) {
+        if gestureRecognizer.isKind(of: UITapGestureRecognizer.self) && otherGestureRecognizer.isKind(of: UIPanGestureRecognizer.self) {
             
             return true
             
@@ -201,7 +201,7 @@ public class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
      
      - returns: returns the input rectangle unchanged if all the dimensions fall within the image frame; otherwise, a rectangle where the origin is recalculate to keep the rectangle within the boundary.
      */
-    func restrictMoveWithinFrame (cropFrame: CGRect) -> CGRect {
+    func restrictMoveWithinFrame (_ cropFrame: CGRect) -> CGRect {
         
         var restrictedFrame = cropFrame
         
@@ -246,13 +246,13 @@ public class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
     
     - parameter gesture A reference to the pan gesture.
     */
-    @IBAction func moveRectangle(gesture:UIPanGestureRecognizer) {
+    @IBAction func moveRectangle(_ gesture:UIPanGestureRecognizer) {
         
-        if gesture.state == UIGestureRecognizerState.Began {
+        if gesture.state == UIGestureRecognizerState.began {
             
             /*  save the crop view frame's origin to compute the changing position as the finger glides around the screen.  Also, save the first touch point compute the amount to change the frames orign.
             */
-            touchOrigin = gesture.locationInView(self)
+            touchOrigin = gesture.location(in: self)
             
             dragOrigin = cropView.frame.origin
 
@@ -261,17 +261,17 @@ public class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
             /* Compute the change in x and y coordinates with respect to the original touch point.  Compute a new x and y point by adding the change in x and y to the crop view's origin before it was moved. Make this point the new origin.
             */
             
-            let currentPt = gesture.locationInView(self)
+            let currentPt = gesture.location(in: self)
             
             let dx = currentPt.x - touchOrigin.x
             
             let dy = currentPt.y - touchOrigin.y
             
-            cropView.frame = CGRectMake(dragOrigin.x+dx, dragOrigin.y+dy, cropView.frame.size.width, cropView.frame.size.height)
+            cropView.frame = CGRect(x: dragOrigin.x+dx, y: dragOrigin.y+dy, width: cropView.frame.size.width, height: cropView.frame.size.height)
 
             cropView.frame = restrictMoveWithinFrame(cropView.frame)
             
-            calculateMaskLayer(maskLayer, cropRect: cropView.frame)
+            let _ = calculateMaskLayer(maskLayer, cropRect: cropView.frame)
             
         }
     }
@@ -283,7 +283,7 @@ public class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
      
      - returns: returns the input rectangle unchanged if all the dimensions fall within the image frame; otherwise, a rectangle where the coordinate falling outside the image frame is reset to fall on the boundary.
      */
-    func restrictDragWithinFrame(cropFrame: CGRect) -> CGRect {
+    func restrictDragWithinFrame(_ cropFrame: CGRect) -> CGRect {
         
         var restrictedFrame = cropFrame
         
@@ -302,7 +302,7 @@ public class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
         */
         if (restrictedFrame.origin.y + restrictedFrame.height) > frame.height {
             
-            restrictedFrame = CGRectMake(restrictedFrame.origin.x, restrictedFrame.origin.y, restrictedFrame.width, frame.height - restrictedFrame.origin.y)
+            restrictedFrame = CGRect(x: restrictedFrame.origin.x, y: restrictedFrame.origin.y, width: restrictedFrame.width, height: frame.height - restrictedFrame.origin.y)
             
         }
         
@@ -320,7 +320,7 @@ public class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
         */
         if (restrictedFrame.origin.x + restrictedFrame.width) > frame.width {
             
-            restrictedFrame = CGRectMake(restrictedFrame.origin.x, restrictedFrame.origin.y, frame.width - restrictedFrame.origin.x, restrictedFrame.height)
+            restrictedFrame = CGRect(x: restrictedFrame.origin.x, y: restrictedFrame.origin.y, width: frame.width - restrictedFrame.origin.x, height: restrictedFrame.height)
             
         }
         
@@ -333,15 +333,15 @@ public class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
     
     - parameter gesture The gesture that is being recognized.
     */
-    @IBAction func dragRectangle(gesture: DragRecognizer ) {
+    @IBAction func dragRectangle(_ gesture: DragRecognizer ) {
     
-        var cropRect = CGRectZero
+        var cropRect = CGRect.zero
     
-        if gesture.state == UIGestureRecognizerState.Began {
+        if gesture.state == UIGestureRecognizerState.began {
             
             /* set the origin for the remainder of the pan gesture to the first touchpoint.
             */
-            cropView.hidden = false
+            cropView.isHidden = false
             
             maskLayer.opacity = shadedOpacity
             
@@ -353,7 +353,7 @@ public class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
             
             cropRect = cropView.frame
             
-            let currentPoint = gesture.locationInView(self)
+            let currentPoint = gesture.location(in: self)
             
             if currentPoint.x >= dragOrigin.x && currentPoint.y >= dragOrigin.y {
                 
@@ -361,7 +361,7 @@ public class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
                 */
                 cropRect.origin = dragOrigin
                 
-                cropRect.size = CGSizeMake(currentPoint.x - cropRect.origin.x, currentPoint.y - cropRect.origin.y)
+                cropRect.size = CGSize(width: currentPoint.x - cropRect.origin.x, height: currentPoint.y - cropRect.origin.y)
                 
             } else if currentPoint.x <= dragOrigin.x && currentPoint.y <= dragOrigin.y {
                 
@@ -369,25 +369,25 @@ public class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
                 */
                 cropRect.origin = currentPoint
                 
-                cropRect.size = CGSizeMake(dragOrigin.x - currentPoint.x, dragOrigin.y - currentPoint.y)
+                cropRect.size = CGSize(width: dragOrigin.x - currentPoint.x, height: dragOrigin.y - currentPoint.y)
                 
             } else if currentPoint.x < dragOrigin.x {
                 
                 /* logic falls here when the x coordinate dimension is changing in the opposite direction of the y coordinate and moving down and to the left (Quadrant IV).  Thhe frame rectangle's origin is a combination of the current x coordinate and the start origin's y.
                 */
                 
-                cropRect.origin = CGPointMake(currentPoint.x, dragOrigin.y)
+                cropRect.origin = CGPoint(x: currentPoint.x, y: dragOrigin.y)
                 
-                cropRect.size = CGSizeMake(dragOrigin.x - currentPoint.x, currentPoint.y - dragOrigin.y)
+                cropRect.size = CGSize(width: dragOrigin.x - currentPoint.x, height: currentPoint.y - dragOrigin.y)
                 
             } else if currentPoint.y < dragOrigin.y {
                 
                 /* Logic falls here when the y coordinate dimension is changing in the opposite direction of the y coordinate and moving up and to the right (Quadrant II). The frame rectangle's origin is a combination of the current y coordinate and the start origin's x.
                 */
 
-                cropRect.origin = CGPointMake(dragOrigin.x, currentPoint.y)
+                cropRect.origin = CGPoint(x: dragOrigin.x, y: currentPoint.y)
                 
-                cropRect.size = CGSizeMake(currentPoint.x - dragOrigin.x, dragOrigin.y - currentPoint.y)
+                cropRect.size = CGSize(width: currentPoint.x - dragOrigin.x, height: dragOrigin.y - currentPoint.y)
                 
             }
         }
@@ -396,7 +396,7 @@ public class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
         
         /*  The mask layer must move with the crop rectangle.
         */
-        calculateMaskLayer(maskLayer, cropRect: cropView.frame)
+        let _ = calculateMaskLayer(maskLayer, cropRect: cropView.frame)
     
     }
     
@@ -405,15 +405,15 @@ public class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
     
     - parameter gesture The gesture being recognized.
     */
-    @IBAction func hideCropRectangle (gesture: UITapGestureRecognizer) {
+    @IBAction func hideCropRectangle (_ gesture: UITapGestureRecognizer) {
         
-        if !cropView.hidden {
+        if !cropView.isHidden {
             
-            cropView.hidden = true
+            cropView.isHidden = true
             
             maskLayer.opacity = transparentOpacity
             
-            cropView.frame = CGRectMake(-1.0, -1.0, 0.0, 0.0)
+            cropView.frame = CGRect(x: -1.0, y: -1.0, width: 0.0, height: 0.0)
         }
     }
     
@@ -425,7 +425,7 @@ public class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
     
     ;returns: A UIImage having the pixels beneath the crop rectangle and its dimensions.
     */
-    public func crop() -> UIImage {
+    open func crop() -> UIImage {
         
         
         // Make sure the crop frame is within the bounds of the image.

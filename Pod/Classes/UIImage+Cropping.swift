@@ -38,9 +38,9 @@ public extension UIImage {
     
     - returns: Scaled size
     */
-    class func scaleSize(fromSize: CGSize, toSize:CGSize) -> CGSize {
+    class func scaleSize(_ fromSize: CGSize, toSize:CGSize) -> CGSize {
         
-        var scaleSize = CGSizeZero
+        var scaleSize = CGSize.zero
         
         if toSize.width < toSize.height {
             
@@ -114,36 +114,36 @@ public extension UIImage {
     - returns: A reference to a uimage created from the scaled bitmap
     */
 
-    func scaleBitmapToSize(scaleSize:CGSize) -> UIImage {
+    func scaleBitmapToSize(_ scaleSize:CGSize) -> UIImage {
         
 
         /* round the size of the underlying CGImage and the input size.
         */
-        var scaleSize = CGSizeMake(round(scaleSize.width), round(scaleSize.height))
+        var scaleSize = CGSize(width: round(scaleSize.width), height: round(scaleSize.height))
         
         /* if the underlying CGImage is oriented differently than the UIImage then swap the width and height of the scale size. This method assumes the size passed is a request on the UIImage's orientation.
         */
-        if imageOrientation == UIImageOrientation.Left || imageOrientation == UIImageOrientation.Right {
+        if imageOrientation == UIImageOrientation.left || imageOrientation == UIImageOrientation.right {
             
-            scaleSize = CGSizeMake(round(scaleSize.height), round(scaleSize.width))
+            scaleSize = CGSize(width: round(scaleSize.height), height: round(scaleSize.width))
         
         }
         
-        let context = CGBitmapContextCreate(nil, Int(scaleSize.width), Int(scaleSize.height), CGImageGetBitsPerComponent(CGImage!), 0, CGImageGetColorSpace(CGImage!)!, CGImageGetBitmapInfo(CGImage!).rawValue)
+        let context = CGContext(data: nil, width: Int(scaleSize.width), height: Int(scaleSize.height), bitsPerComponent: cgImage!.bitsPerComponent, bytesPerRow: 0, space: cgImage!.colorSpace!, bitmapInfo: cgImage!.bitmapInfo.rawValue)
         
-        var returnImg = UIImage(CGImage:CGImage!)
+        var returnImg = UIImage(cgImage:cgImage!)
         
         if context != nil {
             
-            CGContextDrawImage(context!, CGRectMake(0, 0, scaleSize.width, scaleSize.height), CGImage!)
+            context!.draw(cgImage!, in: CGRect(x: 0, y: 0, width: scaleSize.width, height: scaleSize.height))
             
             /* realize the CGImage from the context.
             */
-            let imgRef = CGBitmapContextCreateImage(context!)
+            let imgRef = context!.makeImage()
             
             /* realize the CGImage into a UIImage.
             */
-            returnImg = UIImage(CGImage: imgRef!)
+            returnImg = UIImage(cgImage: imgRef!)
             
         } else {
             
@@ -166,12 +166,12 @@ public extension UIImage {
      
      - returns: A rectangle scaled from the source to the destination dimensions.
      */
-    func transposeCropRect(cropRect:CGRect, fromBound fromRect: CGRect, toBound toRect: CGRect) -> CGRect {
+    func transposeCropRect(_ cropRect:CGRect, fromBound fromRect: CGRect, toBound toRect: CGRect) -> CGRect {
         
         
         let scale = toRect.size.width / fromRect.size.width
         
-        return CGRectMake(round(cropRect.origin.x * scale), round(cropRect.origin.y*scale), round(cropRect.size.width*scale), round(cropRect.size.height*scale))
+        return CGRect(x: round(cropRect.origin.x * scale), y: round(cropRect.origin.y*scale), width: round(cropRect.size.width*scale), height: round(cropRect.size.height*scale))
 
     }
     
@@ -185,45 +185,45 @@ public extension UIImage {
     
     - returns: A rectangle recalculated to orient with the source image.
     */
-    func transposeCropRect(cropRect:CGRect, inDimension dimension:CGSize, forOrientation orientation: UIImageOrientation) -> CGRect {
+    func transposeCropRect(_ cropRect:CGRect, inDimension dimension:CGSize, forOrientation orientation: UIImageOrientation) -> CGRect {
         
         var transposedRect = cropRect
         
         switch (orientation) {
             
-        case UIImageOrientation.Left:
+        case UIImageOrientation.left:
             transposedRect.origin.x = dimension.height - (cropRect.size.height + cropRect.origin.y)
             transposedRect.origin.y = cropRect.origin.x
-            transposedRect.size = CGSizeMake(cropRect.size.height, cropRect.size.width)
+            transposedRect.size = CGSize(width: cropRect.size.height, height: cropRect.size.width)
             
-        case UIImageOrientation.Right:
+        case UIImageOrientation.right:
             transposedRect.origin.x = cropRect.origin.y
             transposedRect.origin.y = dimension.width - (cropRect.size.width + cropRect.origin.x)
-            transposedRect.size = CGSizeMake(cropRect.size.height, cropRect.size.width)
+            transposedRect.size = CGSize(width: cropRect.size.height, height: cropRect.size.width)
 
-        case UIImageOrientation.Down:
+        case UIImageOrientation.down:
             transposedRect.origin.x = dimension.width - (cropRect.size.width + cropRect.origin.x)
             transposedRect.origin.y = dimension.height - (cropRect.size.height + cropRect.origin.y)
 
-        case UIImageOrientation.DownMirrored:
+        case UIImageOrientation.downMirrored:
             transposedRect.origin.x = cropRect.origin.x
             transposedRect.origin.y = dimension.height - (cropRect.size.height + cropRect.origin.y)
 
-        case UIImageOrientation.LeftMirrored:
+        case UIImageOrientation.leftMirrored:
             transposedRect.origin.x = cropRect.origin.y
             transposedRect.origin.y = cropRect.origin.x
-            transposedRect.size = CGSizeMake(cropRect.size.height, cropRect.size.width)
+            transposedRect.size = CGSize(width: cropRect.size.height, height: cropRect.size.width)
 
-        case UIImageOrientation.RightMirrored:
+        case UIImageOrientation.rightMirrored:
             transposedRect.origin.x = dimension.height - (cropRect.size.height + cropRect.origin.y)
             transposedRect.origin.y = dimension.width - (cropRect.size.width + cropRect.origin.x)
-            transposedRect.size = CGSizeMake(cropRect.size.height, cropRect.size.width)
+            transposedRect.size = CGSize(width: cropRect.size.height, height: cropRect.size.width)
 
-        case UIImageOrientation.UpMirrored:
+        case UIImageOrientation.upMirrored:
             transposedRect.origin.x = dimension.width - (cropRect.size.width + cropRect.origin.x)
             transposedRect.origin.y = cropRect.origin.y
            
-        case UIImageOrientation.Up:
+        case UIImageOrientation.up:
             break
 
 
@@ -242,10 +242,10 @@ public extension UIImage {
      
      - returns: A UIImage cut from the image having the crop rect dimensions and origin.
      */
-    public func cropRectangle(cropRect: CGRect, inFrame frameSize: CGSize) -> UIImage {
+    public func cropRectangle(_ cropRect: CGRect, inFrame frameSize: CGSize) -> UIImage {
         
         
-        let rndFrameSize = CGSizeMake(round(frameSize.width), round(frameSize.height))
+        let rndFrameSize = CGSize(width: round(frameSize.width), height: round(frameSize.height))
         
         /* resize the image to match the zoomed content size
         */
@@ -253,9 +253,9 @@ public extension UIImage {
         
         /* crop the resized image to the crop rectangel.
         */
-        let cropCGImage = CGImageCreateWithImageInRect(img.CGImage!, transposeCropRect(cropRect, inDimension: rndFrameSize, forOrientation: imageOrientation))
+        let cropCGImage = img.cgImage!.cropping(to: transposeCropRect(cropRect, inDimension: rndFrameSize, forOrientation: imageOrientation))
         
-        let croppedImg = UIImage(CGImage: cropCGImage!, scale: 1.0, orientation: imageOrientation)
+        let croppedImg = UIImage(cgImage: cropCGImage!, scale: 1.0, orientation: imageOrientation)
         
         return croppedImg
         

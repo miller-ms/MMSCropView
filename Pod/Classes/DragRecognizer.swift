@@ -31,7 +31,7 @@ import UIKit.UIGestureRecognizerSubclass
 class DragRecognizer:  UIPanGestureRecognizer {
     
     /// The single point that began the touch.
-    var origin = CGPointZero
+    var origin = CGPoint.zero
     
     /**
     override the UIPanGestureRecognizer to identify the point that began the touch gesture.  When the action method is called and the gesture state is UIGestureRecognizerStateBegan, the point returned from locationInView is not the point that began the gesture.  This routine sets the origin of the pan gesture.
@@ -39,18 +39,18 @@ class DragRecognizer:  UIPanGestureRecognizer {
     - parameter touches: Collection of touch points
     - parameter event:   Touch event type
     */
-    override func touchesBegan (touches:Set<UITouch>, withEvent event:UIEvent?) {
+    override func touchesBegan (_ touches:Set<UITouch>, with event:UIEvent?) {
                 
         for touch in touches {
             
-            if touch.phase == UITouchPhase.Began {
+            if touch.phase == UITouchPhase.began {
                 
-                origin = touch.locationInView(view)
+                origin = touch.location(in: view)
                 break
             }
         }
         
-        super.touchesBegan(touches, withEvent:event!)
+        super.touchesBegan(touches, with:event!)
     }
 
 

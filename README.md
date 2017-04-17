@@ -34,7 +34,10 @@ Add an event handler to initiate the crop action and call the crop method on the
 
 ## Requirements
 
-*MMSCropView requires iOS 8.3 or later.*
+- *MMSCropView requires iOS 8.3 or later.*
+- *Swift 3.0.*
+
+
 
 ## Installation
 

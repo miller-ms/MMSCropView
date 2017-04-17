@@ -32,15 +32,13 @@ class ViewController: UIViewController {
      
      - parameter sender: <#sender description#>
      */
-    @IBAction func crop(sender: UIButton) {
-        
+    @IBAction func crop(_ sender: UIButton) {
         
         let croppedImage = originalImageView.crop()
         
         croppedImageView.image = croppedImage
-        
-    }
 
+    }
     
 }
 
