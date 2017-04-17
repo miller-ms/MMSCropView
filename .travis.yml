@@ -3,8 +3,9 @@
 # * https://github.com/supermarin/xcpretty#usage
 #
 
-language: objective-c
 osx_image: xcode8
+language: objective-c
+
 
 script:
 - set -o pipefail && xcodebuild test -workspace Example/MMSCropView.xcworkspace -scheme MMSCropView-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
