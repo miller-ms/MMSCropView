@@ -14,7 +14,7 @@
     "tag": "2.0.0"
   },
   "platforms": {
-    "ios": "8.3"
+    "ios": "9.0"
   },
   "requires_arc": true,
   "source_files": "Pod/Classes/**/*"
