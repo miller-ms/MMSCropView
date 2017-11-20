@@ -28,7 +28,7 @@
 
 import UIKit
 
-open class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
+@objc open class MMSCropView: UIImageView, UIGestureRecognizerDelegate {
 
     
     /// The dragOrigin is the first point the user touched to begin the drag operation to delineate the crop rectangle.

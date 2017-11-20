@@ -20,7 +20,7 @@ DESC
   s.license      = 'MIT'
   s.author       = { "William Miller" => "support@millermobilesoft.com" }
   s.source       = { :git => "https://github.com/miller-ms/MMSCropView.git", :tag => s.version.to_s }
-  s.platform     = :ios, '8.3'
+  s.platform     = :ios, '9.0'
   s.requires_arc = true
   s.source_files = 'Pod/Classes/**/*'
 end
