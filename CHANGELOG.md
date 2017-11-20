@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 `MMSCropView` adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.1.0 — Released on 2017-11-19](https://github.com/miller-ms/MMSCropView/releases/tag/2.1.0)
+#### Updated
+- Updated to support swift 4.0
+-  Updated by [William Miller](https://github.com/miller-ms).
+
 ## [2.0.0 — Released on 2016-10-17](https://github.com/miller-ms/MMSCropView/releases/tag/2.0.0)
 #### Updated
 - Updated source files for swift 3.0 compatiblity.
